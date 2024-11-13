@@ -1,0 +1,231 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main app container (Card design) */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the card container */
+.container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h1, h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group .col-md-4 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Input focus styling */
+form input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.4);
+}
+
+/* Submit button styling */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1f598d;
+}
+
+/* Users list styling (inside the card) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    color: #2c3e50;
+}
+
+/* Display name in the format "Jane - 29 - Los Angeles" */
+li .user-info {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px; /* Space between details and buttons */
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Container (on the second row) */
+li .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Edit and Delete button styling */
+li .edit-btn, li .delete-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Edit button color */
+li .edit-btn {
+    background-color: #f39c12;
+}
+
+li .edit-btn:hover {
+    background-color: #e67e22;
+}
+
+li .edit-btn:active {
+    background-color: #d35400;
+}
+
+/* Delete button color */
+li .delete-btn {
+    background-color: #e74c3c;
+}
+
+li .delete-btn:hover {
+    background-color: #c0392b;
+}
+
+li .delete-btn:active {
+    background-color: #e74c3c;
+}
+
+/* Hover and active states for buttons */
+li button:hover {
+    background-color: #732d91;
+}
+
+li button:active {
+    background-color: #4e1c6e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    li {
+        padding: 12px;
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group .col-md-4 {
+        margin-bottom: 10px;
+    }
+}
